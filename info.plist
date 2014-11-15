@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>riotbit.sublimeproject-workflow</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Christian Klopp</string>
+	<key>description</key>
+	<string>Open your Sublimeprojects from Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>sublimeproject-workflow</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>sub</string>
+				<key>script</key>
+				<string>python sublimeprojects-workflow.py</string>
+				<key>title</key>
+				<string>Open Sublimeproject &lt;...&gt;</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>82ADEFF3-046A-4303-BA00-9BC04D03FE57</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>sdafdsf</string>
+	<key>uidata</key>
+	<dict>
+		<key>82ADEFF3-046A-4303-BA00-9BC04D03FE57</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
