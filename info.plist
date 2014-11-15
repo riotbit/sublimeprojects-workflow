@@ -7,7 +7,27 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>82ADEFF3-046A-4303-BA00-9BC04D03FE57</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>51769064-2C17-4238-9F19-3F35B1F2CA7D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>60C4FBC5-3B68-479E-BE7C-686C7621E41A</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Append to the current window</string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Christian Klopp</string>
 	<key>description</key>
@@ -22,15 +42,17 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>116</integer>
 				<key>keyword</key>
 				<string>sub</string>
 				<key>script</key>
-				<string>python sublimeprojects-workflow.py</string>
+				<string>python sublimeprojects-workflow.py {query}</string>
+				<key>subtext</key>
+				<string>Find Sublime Text 2 Projects</string>
 				<key>title</key>
-				<string>Open Sublimeproject &lt;...&gt;</string>
+				<string>Sublime Text 2 Projects</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -43,11 +65,55 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>subl -n --project "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>51769064-2C17-4238-9F19-3F35B1F2CA7D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>subl -a --project "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>60C4FBC5-3B68-479E-BE7C-686C7621E41A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>sdafdsf</string>
 	<key>uidata</key>
 	<dict>
+		<key>51769064-2C17-4238-9F19-3F35B1F2CA7D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>60C4FBC5-3B68-479E-BE7C-686C7621E41A</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
 		<key>82ADEFF3-046A-4303-BA00-9BC04D03FE57</key>
 		<dict>
 			<key>ypos</key>
