@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>riotbit.sublimeproject-workflow</string>
+	<string>com.riotbit.sublimeproject-workflow</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -18,13 +18,16 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+		</array>
+		<key>B44F1F82-6CA1-4EE1-8319-E2C800FB06DF</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>60C4FBC5-3B68-479E-BE7C-686C7621E41A</string>
+				<string>82ADEFF3-046A-4303-BA00-9BC04D03FE57</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Append to the current window</string>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -38,6 +41,33 @@
 	<string>sublimeproject-workflow</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B44F1F82-6CA1-4EE1-8319-E2C800FB06DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -69,9 +99,9 @@
 			<key>config</key>
 			<dict>
 				<key>escaping</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>subl -n --project "{query}"</string>
+				<string>/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl --project "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -79,23 +109,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>51769064-2C17-4238-9F19-3F35B1F2CA7D</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>4</integer>
-				<key>script</key>
-				<string>subl -a --project "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>60C4FBC5-3B68-479E-BE7C-686C7621E41A</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -109,18 +122,18 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>60C4FBC5-3B68-479E-BE7C-686C7621E41A</key>
+		<key>82ADEFF3-046A-4303-BA00-9BC04D03FE57</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
 		</dict>
-		<key>82ADEFF3-046A-4303-BA00-9BC04D03FE57</key>
+		<key>B44F1F82-6CA1-4EE1-8319-E2C800FB06DF</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/riotbit/sublimeprojects-workflow</string>
 </dict>
 </plist>
