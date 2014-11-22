@@ -19,7 +19,7 @@ def main(wf):
     if not args:
         query_matches = project_paths # return all project files
     else:
-        query_matches = wf.filter(args[0], project_paths)
+        query_matches = wf.filter(args[0].encode("utf-8"), project_paths)
 
     # Add matches to Alfred feedback
     for match_path in query_matches:
