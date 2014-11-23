@@ -15,11 +15,14 @@ def main(wf):
 
     # get the paths of query matches
     project_paths = subprocess.check_output(['mdfind', 'kMDItemFSName=*.sublime-project']).splitlines()
+    # decode project_paths to normalised unicode
+    for i in range(0,len(project_paths)-1):
+        project_paths[i] = wf.decode(project_paths[i])
 
     if not args:
         query_matches = project_paths # return all project files
     else:
-        query_matches = wf.filter(args[0].encode("utf-8"), project_paths)
+        query_matches = wf.filter(args[0], project_paths)
 
     # Add matches to Alfred feedback
     for match_path in query_matches:
